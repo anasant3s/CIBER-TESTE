@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A importância da Cibersegurança</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>A importância da Cibersegurança</h1>
+      <button id="startQuizButton" onclick="startQuiz()">Iniciar Quiz</button>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="intro">
+      <CENTER><h2>O que é Cibersegurança?</h2></CENTER>
+      <p>
+        A cibersegurança envolve a proteção de sistemas e redes contra ameaças digitais como vírus, hackers e roubo de dados.
+        É essencial para garantir a segurança de informações sensíveis e proteger indivíduos e empresas contra crimes cibernéticos. Ao se tratar
+        de empresas, é um fator essencial afim de garantir a preservação de 
+        dados sensiveis, e manter um bom funcionamento a empresa.
+      </p>
+    </section>
+
+    <section class="principios">
+      <h2>Pilares Essenciais</h2>
+      <div class="principios-card">
+        <h3>Confidencialidade</h3>
+        <p>Assegura que as informações são acessíveis apenas para quem tem autorização.</p>
+      </div>
+      <div class="principios-card">
+        <h3>Integridade</h3>
+        <p>Garante que os dados não sejam alterados ou corrompidos de forma não autorizada.</p>
+      </div>
+      <div class="principios-card">
+        <h3>Disponibilidade</h3>
+        <p>Assegura que os dados e sistemas estejam acessíveis quando necessário.</p>
+      </div>
+    </section>
+
+    <section class="info-ciberseguranca">
+      <h2>Principais Ameaças</h2>
+      <ul>
+        <li><strong>Phishing:</strong> Envio de mensagens fraudulentas para roubo de informações.</li>
+        <li><strong>Ransomware:</strong> Ataques que sequestram dados e exigem pagamento.</li>
+        <li><strong>Malware:</strong> Software malicioso que compromete a segurança do sistema.</li>
+      </ul>
+    </section>
+
+    <section class="grafico">
+      <h2>Ataques mais comuns: </h2>
+      <canvas id="cibersegurancaChart"></canvas>
+    </section>
+
+    <section class="simulador" id="quiz" style="display: none;">
+     <center> <h2>Quiz: Isso é Phishing?</h2></center>
+      <div id="emails"></div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
